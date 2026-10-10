@@ -1,0 +1,115 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Intelligent Document Processing Pipeline (S3 + Lambda + Textract + Comprehend + DynamoDB)
+
+Parameters:
+  ProjectName:
+    Type: String
+    Default: intelligent-doc-processor
+    Description: Prefix name for project resources
+
+Resources:
+  # 1. DynamoDB Table for extracted document metadata & entities
+  ProcessedDocumentsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub "${ProjectName}-documents"
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: document_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: document_id
+          KeyType: HASH
+
+  # 2. S3 Bucket for Document Uploads (Invoices, Resumes, IDs)
+  DocumentUploadBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "${ProjectName}-uploads-${AWS::AccountId}"
+      CorsConfiguration:
+        CorsRules:
+          - AllowedHeaders: ['*']
+            AllowedMethods: [GET, PUT, POST]
+            AllowedOrigins: ['*']
+
+  # 3. IAM Execution Role for Lambda
+  ProcessorLambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: IDPPipelinePermissions
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              # S3 Access
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:ListBucket
+                Resource:
+                  - !Sub "arn:aws:s3:::${DocumentUploadBucket}"
+                  - !Sub "arn:aws:s3:::${DocumentUploadBucket}/*"
+              # Textract Access
+              - Effect: Allow
+                Action:
+                  - textract:DetectDocumentText
+                  - textract:AnalyzeDocument
+                Resource: "*"
+              # Comprehend Access
+              - Effect: Allow
+                Action:
+                  - comprehend:DetectEntities
+                  - comprehend:DetectKeyPhrases
+                  - comprehend:DetectPiiEntities
+                Resource: "*"
+              # DynamoDB Access
+              - Effect: Allow
+                Action:
+                  - dynamodb:PutItem
+                  - dynamodb:GetItem
+                  - dynamodb:Scan
+                  - dynamodb:Query
+                  - dynamodb:UpdateItem
+                Resource: !GetAtt ProcessedDocumentsTable.Arn
+
+  # 4. Lambda Function Processor
+  DocumentProcessorFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub "${ProjectName}-processor"
+      CodeUri: lambda/
+      Handler: processor.lambda_handler
+      Runtime: python3.12
+      Timeout: 120
+      MemorySize: 512
+      Role: !GetAtt ProcessorLambdaRole.Arn
+      Environment:
+        Variables:
+          DYNAMODB_TABLE: !Ref ProcessedDocumentsTable
+      Events:
+        DocumentUploadEvent:
+          Type: S3
+          Properties:
+            Bucket: !Ref DocumentUploadBucket
+            Events: s3:ObjectCreated:*
+
+Outputs:
+  UploadBucketName:
+    Description: S3 Bucket to upload documents
+    Value: !Ref DocumentUploadBucket
+  DynamoDBTableName:
+    Description: DynamoDB Table storing extraction results
+    Value: !Ref ProcessedDocumentsTable
+  LambdaFunctionArn:
+    Description: Processor Lambda Function ARN
+    Value: !GetAtt DocumentProcessorFunction.Arn

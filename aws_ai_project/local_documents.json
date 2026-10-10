@@ -1,0 +1,1692 @@
+[
+  {
+    "document_id": "doc_7895bb99",
+    "filename": "Niraj_Akhade_Resume__1.pdf",
+    "saved_filename": "doc_7895bb99_Niraj_Akhade_Resume__1.pdf",
+    "s3_bucket": "doc-processor-sandbox",
+    "s3_key": "uploads/doc_7895bb99_Niraj_Akhade_Resume__1.pdf",
+    "category": "Resume",
+    "processed_at": "2026-10-10T20:14:11.421276Z",
+    "processing_time_ms": 1121,
+    "status": "COMPLETED",
+    "mode": "SANDBOX_SIMULATOR",
+    "word_count": 218,
+    "extracted_text": "NIRAJ ANANDA AKHADE \nKhopoli, Maharashtra  \u2022  8888674370  \u2022  akhadeniraj@gmail.com \nLinkedIn: linkedin.com/in/niraj-akhade-0a322b420  \u2022  GitHub: github.com/akhadeniraj-debug \n \nCAREER OBJECTIVE \nBSc IT graduate aspiring to build a career as a Python Developer. Skilled in Python, Flask, MySQL, REST APIs, HTML/CSS \nand Bootstrap, with a working foundation in Data Structures & Algorithms. Passionate about building practical, real-\nworld software applications and continuously developing expertise in AI/ML. \nPROJECTS \nEmployee Management System  (Python, Flask, MySQL, REST APIs, HTML/CSS, Bootstrap) \n\u2022 Developed a full-featured employee management application using Python, Flask and MySQL. \n\u2022 Implemented complete CRUD operations for employee records. \n\u2022 Built REST API functionality and connected the application to a MySQL database. \n\u2022 Designed a responsive interface using HTML, CSS and Bootstrap. \n\u2022 Added a dashboard for employee information and management, including a payroll module. \n\u2022 Version-controlled the project and published it on GitHub. \nEDUCATION \nBachelor of Science in Information Technology (BSc IT) 2026 \nPillai HOC College, Rasayani \nCGPA - 7 \nHigher Secondary School (12th)  \nPercentage - 47% \nSecondary School (10th)  \nPercentage - 72% \nSKILLS \n\u2022 Programming Languages: Python, HTML & CSS, Basic DSA \n\u2022 Frameworks & Tools: Flask, REST APIs, MySQL / SQL, Bootstrap, Git & GitHub \n\u2022 Currently Learning: AI / Machine Learning fundamentals \nADDITIONAL \n\u2022 Basic Data Structures & Algorithms (DSA) \n\u2022 Currently developing skills in Python development, APIs, SQL and AI/ML",
+    "form_fields": {
+      "Candidate Name": "Niraj Akhade",
+      "Target Role": "Local Sandbox Applicant",
+      "Email": "niraj.akhade@example.com",
+      "Phone": "+1 (555) 000-0000"
+    },
+    "entities": [
+      {
+        "Text": "Niraj Akhade",
+        "Type": "PERSON",
+        "Score": 0.998
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Local Sandbox Applicant",
+        "Score": 0.996
+      }
+    ]
+  },
+  {
+    "document_id": "doc_34d247db",
+    "filename": "Niraj_Akhade_Resume__1.pdf",
+    "saved_filename": "doc_34d247db_Niraj_Akhade_Resume__1.pdf",
+    "s3_bucket": "doc-processor-sandbox",
+    "s3_key": "uploads/doc_34d247db_Niraj_Akhade_Resume__1.pdf",
+    "category": "Resume",
+    "processed_at": "2026-10-10T20:08:19.677516Z",
+    "processing_time_ms": 123,
+    "status": "COMPLETED",
+    "mode": "SANDBOX_SIMULATOR",
+    "word_count": 66,
+    "extracted_text": "SARAH JENKINS\nSenior Cloud Solutions Architect | Seattle, WA | sarah.jenkins@cloudtech.dev\nSUMMARY:\nResults-driven Cloud Architect with 8+ years designing highly available, serverless\nmicroservices and AI-enabled document processing pipelines on AWS.\nTECHNICAL SKILLS:\nAWS (Lambda, S3, DynamoDB, Textract, Comprehend, API Gateway, CDK, IAM), Python, Node.js\nEDUCATION:\nM.S. in Computer Science, University of Washington (2018)\nCERTIFICATIONS:\nAWS Certified Solutions Architect - Professional\nAWS Certified DevOps Engineer - Professional",
+    "form_fields": {
+      "Candidate Name": "Sarah Jenkins",
+      "Target Role": "Senior Cloud Solutions Architect",
+      "Email": "sarah.jenkins@cloudtech.dev",
+      "Phone": "+1 (555) 438-9201",
+      "Location": "Seattle, Washington, USA",
+      "Total Experience": "8+ Years",
+      "Highest Degree": "M.S. in Computer Science - University of Washington",
+      "Certifications": "AWS Certified Solutions Architect Professional, AWS DevOps Pro"
+    },
+    "entities": [
+      {
+        "Text": "Sarah Jenkins",
+        "Type": "PERSON",
+        "Score": 0.998
+      },
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Type": "TITLE",
+        "Score": 0.985
+      },
+      {
+        "Text": "Seattle, Washington",
+        "Type": "LOCATION",
+        "Score": 0.991
+      },
+      {
+        "Text": "University of Washington",
+        "Type": "ORGANIZATION",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Certified Solutions Architect",
+        "Type": "COMMERCIAL_ITEM",
+        "Score": 0.972
+      },
+      {
+        "Text": "Amazon Web Services",
+        "Type": "ORGANIZATION",
+        "Score": 0.996
+      },
+      {
+        "Text": "8+ Years",
+        "Type": "QUANTITY",
+        "Score": 0.954
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Score": 0.996
+      },
+      {
+        "Text": "event-driven architectures",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Lambda and Textract",
+        "Score": 0.984
+      },
+      {
+        "Text": "DynamoDB NoSQL design",
+        "Score": 0.977
+      },
+      {
+        "Text": "Infrastructure as Code",
+        "Score": 0.968
+      }
+    ]
+  },
+  {
+    "document_id": "sample_id_card_1c58bc",
+    "filename": "state_drivers_license_id.png",
+    "saved_filename": "state_drivers_license_id.png",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/state_drivers_license_id.png",
+    "category": "ID / Form",
+    "processed_at": "2026-10-10T19:57:59.828710Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 27,
+    "extracted_text": "STATE OF CALIFORNIA - DRIVER LICENSE\nDL: D50A66A6E\nEXP: 07/14/2030\nLN: VANCE\nFN: ALEXANDER MARCUS\nDOB: 07/14/1992\nCLASS: C\nSEX: M   HAIR: BRN   EYES: BLU\nISS: 07/15/2024",
+    "form_fields": {
+      "Document Type": "State Driver's License / Identification",
+      "Full Name": "Alexander Marcus Vance",
+      "Date of Birth": "1992-07-14",
+      "ID / License Number": "D50A66A6E",
+      "Expiration Date": "2030-07-14",
+      "Issue Date": "2024-07-15",
+      "Class": "Class C - Standard Operator",
+      "Issuing State": "California, USA",
+      "Organ Donor": "Yes [X]"
+    },
+    "entities": [
+      {
+        "Text": "Alexander Marcus Vance",
+        "Type": "PERSON",
+        "Score": 0.999
+      },
+      {
+        "Text": "California",
+        "Type": "LOCATION",
+        "Score": 0.994
+      },
+      {
+        "Text": "1992-07-14",
+        "Type": "DATE",
+        "Score": 0.995
+      },
+      {
+        "Text": "2030-07-14",
+        "Type": "DATE",
+        "Score": 0.992
+      },
+      {
+        "Text": "Class C",
+        "Type": "OTHER",
+        "Score": 0.961
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "State Driver's License",
+        "Score": 0.997
+      },
+      {
+        "Text": "Alexander Marcus Vance",
+        "Score": 0.995
+      },
+      {
+        "Text": "Standard Operator",
+        "Score": 0.974
+      }
+    ]
+  },
+  {
+    "document_id": "doc_f71d3afe",
+    "filename": "Niraj_Akhade_Resume__1.pdf",
+    "saved_filename": "doc_f71d3afe_Niraj_Akhade_Resume__1.pdf",
+    "s3_bucket": "doc-processor-sandbox",
+    "s3_key": "uploads/doc_f71d3afe_Niraj_Akhade_Resume__1.pdf",
+    "category": "Resume",
+    "processed_at": "2026-10-10T19:56:45.948856Z",
+    "processing_time_ms": 123,
+    "status": "COMPLETED",
+    "mode": "SANDBOX_SIMULATOR",
+    "word_count": 66,
+    "extracted_text": "SARAH JENKINS\nSenior Cloud Solutions Architect | Seattle, WA | sarah.jenkins@cloudtech.dev\nSUMMARY:\nResults-driven Cloud Architect with 8+ years designing highly available, serverless\nmicroservices and AI-enabled document processing pipelines on AWS.\nTECHNICAL SKILLS:\nAWS (Lambda, S3, DynamoDB, Textract, Comprehend, API Gateway, CDK, IAM), Python, Node.js\nEDUCATION:\nM.S. in Computer Science, University of Washington (2018)\nCERTIFICATIONS:\nAWS Certified Solutions Architect - Professional\nAWS Certified DevOps Engineer - Professional",
+    "form_fields": {
+      "Candidate Name": "Sarah Jenkins",
+      "Target Role": "Senior Cloud Solutions Architect",
+      "Email": "sarah.jenkins@cloudtech.dev",
+      "Phone": "+1 (555) 438-9201",
+      "Location": "Seattle, Washington, USA",
+      "Total Experience": "8+ Years",
+      "Highest Degree": "M.S. in Computer Science - University of Washington",
+      "Certifications": "AWS Certified Solutions Architect Professional, AWS DevOps Pro"
+    },
+    "entities": [
+      {
+        "Text": "Sarah Jenkins",
+        "Type": "PERSON",
+        "Score": 0.998
+      },
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Type": "TITLE",
+        "Score": 0.985
+      },
+      {
+        "Text": "Seattle, Washington",
+        "Type": "LOCATION",
+        "Score": 0.991
+      },
+      {
+        "Text": "University of Washington",
+        "Type": "ORGANIZATION",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Certified Solutions Architect",
+        "Type": "COMMERCIAL_ITEM",
+        "Score": 0.972
+      },
+      {
+        "Text": "Amazon Web Services",
+        "Type": "ORGANIZATION",
+        "Score": 0.996
+      },
+      {
+        "Text": "8+ Years",
+        "Type": "QUANTITY",
+        "Score": 0.954
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Score": 0.996
+      },
+      {
+        "Text": "event-driven architectures",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Lambda and Textract",
+        "Score": 0.984
+      },
+      {
+        "Text": "DynamoDB NoSQL design",
+        "Score": 0.977
+      },
+      {
+        "Text": "Infrastructure as Code",
+        "Score": 0.968
+      }
+    ]
+  },
+  {
+    "document_id": "doc_766ea8cc",
+    "filename": "Niraj_Akhade_Resume__1.pdf",
+    "saved_filename": "doc_766ea8cc_Niraj_Akhade_Resume__1.pdf",
+    "s3_bucket": "doc-processor-sandbox",
+    "s3_key": "uploads/doc_766ea8cc_Niraj_Akhade_Resume__1.pdf",
+    "category": "Resume",
+    "processed_at": "2026-10-10T19:56:43.071681Z",
+    "processing_time_ms": 155,
+    "status": "COMPLETED",
+    "mode": "SANDBOX_SIMULATOR",
+    "word_count": 66,
+    "extracted_text": "SARAH JENKINS\nSenior Cloud Solutions Architect | Seattle, WA | sarah.jenkins@cloudtech.dev\nSUMMARY:\nResults-driven Cloud Architect with 8+ years designing highly available, serverless\nmicroservices and AI-enabled document processing pipelines on AWS.\nTECHNICAL SKILLS:\nAWS (Lambda, S3, DynamoDB, Textract, Comprehend, API Gateway, CDK, IAM), Python, Node.js\nEDUCATION:\nM.S. in Computer Science, University of Washington (2018)\nCERTIFICATIONS:\nAWS Certified Solutions Architect - Professional\nAWS Certified DevOps Engineer - Professional",
+    "form_fields": {
+      "Candidate Name": "Sarah Jenkins",
+      "Target Role": "Senior Cloud Solutions Architect",
+      "Email": "sarah.jenkins@cloudtech.dev",
+      "Phone": "+1 (555) 438-9201",
+      "Location": "Seattle, Washington, USA",
+      "Total Experience": "8+ Years",
+      "Highest Degree": "M.S. in Computer Science - University of Washington",
+      "Certifications": "AWS Certified Solutions Architect Professional, AWS DevOps Pro"
+    },
+    "entities": [
+      {
+        "Text": "Sarah Jenkins",
+        "Type": "PERSON",
+        "Score": 0.998
+      },
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Type": "TITLE",
+        "Score": 0.985
+      },
+      {
+        "Text": "Seattle, Washington",
+        "Type": "LOCATION",
+        "Score": 0.991
+      },
+      {
+        "Text": "University of Washington",
+        "Type": "ORGANIZATION",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Certified Solutions Architect",
+        "Type": "COMMERCIAL_ITEM",
+        "Score": 0.972
+      },
+      {
+        "Text": "Amazon Web Services",
+        "Type": "ORGANIZATION",
+        "Score": 0.996
+      },
+      {
+        "Text": "8+ Years",
+        "Type": "QUANTITY",
+        "Score": 0.954
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Score": 0.996
+      },
+      {
+        "Text": "event-driven architectures",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Lambda and Textract",
+        "Score": 0.984
+      },
+      {
+        "Text": "DynamoDB NoSQL design",
+        "Score": 0.977
+      },
+      {
+        "Text": "Infrastructure as Code",
+        "Score": 0.968
+      }
+    ]
+  },
+  {
+    "document_id": "doc_a8d37e99",
+    "filename": "Niraj_Akhade_Resume__1.pdf",
+    "saved_filename": "doc_a8d37e99_Niraj_Akhade_Resume__1.pdf",
+    "s3_bucket": "doc-processor-sandbox",
+    "s3_key": "uploads/doc_a8d37e99_Niraj_Akhade_Resume__1.pdf",
+    "category": "Resume",
+    "processed_at": "2026-10-10T19:56:08.970623Z",
+    "processing_time_ms": 122,
+    "status": "COMPLETED",
+    "mode": "SANDBOX_SIMULATOR",
+    "word_count": 66,
+    "extracted_text": "SARAH JENKINS\nSenior Cloud Solutions Architect | Seattle, WA | sarah.jenkins@cloudtech.dev\nSUMMARY:\nResults-driven Cloud Architect with 8+ years designing highly available, serverless\nmicroservices and AI-enabled document processing pipelines on AWS.\nTECHNICAL SKILLS:\nAWS (Lambda, S3, DynamoDB, Textract, Comprehend, API Gateway, CDK, IAM), Python, Node.js\nEDUCATION:\nM.S. in Computer Science, University of Washington (2018)\nCERTIFICATIONS:\nAWS Certified Solutions Architect - Professional\nAWS Certified DevOps Engineer - Professional",
+    "form_fields": {
+      "Candidate Name": "Sarah Jenkins",
+      "Target Role": "Senior Cloud Solutions Architect",
+      "Email": "sarah.jenkins@cloudtech.dev",
+      "Phone": "+1 (555) 438-9201",
+      "Location": "Seattle, Washington, USA",
+      "Total Experience": "8+ Years",
+      "Highest Degree": "M.S. in Computer Science - University of Washington",
+      "Certifications": "AWS Certified Solutions Architect Professional, AWS DevOps Pro"
+    },
+    "entities": [
+      {
+        "Text": "Sarah Jenkins",
+        "Type": "PERSON",
+        "Score": 0.998
+      },
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Type": "TITLE",
+        "Score": 0.985
+      },
+      {
+        "Text": "Seattle, Washington",
+        "Type": "LOCATION",
+        "Score": 0.991
+      },
+      {
+        "Text": "University of Washington",
+        "Type": "ORGANIZATION",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Certified Solutions Architect",
+        "Type": "COMMERCIAL_ITEM",
+        "Score": 0.972
+      },
+      {
+        "Text": "Amazon Web Services",
+        "Type": "ORGANIZATION",
+        "Score": 0.996
+      },
+      {
+        "Text": "8+ Years",
+        "Type": "QUANTITY",
+        "Score": 0.954
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Score": 0.996
+      },
+      {
+        "Text": "event-driven architectures",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Lambda and Textract",
+        "Score": 0.984
+      },
+      {
+        "Text": "DynamoDB NoSQL design",
+        "Score": 0.977
+      },
+      {
+        "Text": "Infrastructure as Code",
+        "Score": 0.968
+      }
+    ]
+  },
+  {
+    "document_id": "doc_f8e78add",
+    "filename": "Niraj_Akhade_Resume__1.pdf",
+    "saved_filename": "doc_f8e78add_Niraj_Akhade_Resume__1.pdf",
+    "s3_bucket": "doc-processor-sandbox",
+    "s3_key": "uploads/doc_f8e78add_Niraj_Akhade_Resume__1.pdf",
+    "category": "Resume",
+    "processed_at": "2026-10-10T19:56:03.657398Z",
+    "processing_time_ms": 124,
+    "status": "COMPLETED",
+    "mode": "SANDBOX_SIMULATOR",
+    "word_count": 66,
+    "extracted_text": "SARAH JENKINS\nSenior Cloud Solutions Architect | Seattle, WA | sarah.jenkins@cloudtech.dev\nSUMMARY:\nResults-driven Cloud Architect with 8+ years designing highly available, serverless\nmicroservices and AI-enabled document processing pipelines on AWS.\nTECHNICAL SKILLS:\nAWS (Lambda, S3, DynamoDB, Textract, Comprehend, API Gateway, CDK, IAM), Python, Node.js\nEDUCATION:\nM.S. in Computer Science, University of Washington (2018)\nCERTIFICATIONS:\nAWS Certified Solutions Architect - Professional\nAWS Certified DevOps Engineer - Professional",
+    "form_fields": {
+      "Candidate Name": "Sarah Jenkins",
+      "Target Role": "Senior Cloud Solutions Architect",
+      "Email": "sarah.jenkins@cloudtech.dev",
+      "Phone": "+1 (555) 438-9201",
+      "Location": "Seattle, Washington, USA",
+      "Total Experience": "8+ Years",
+      "Highest Degree": "M.S. in Computer Science - University of Washington",
+      "Certifications": "AWS Certified Solutions Architect Professional, AWS DevOps Pro"
+    },
+    "entities": [
+      {
+        "Text": "Sarah Jenkins",
+        "Type": "PERSON",
+        "Score": 0.998
+      },
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Type": "TITLE",
+        "Score": 0.985
+      },
+      {
+        "Text": "Seattle, Washington",
+        "Type": "LOCATION",
+        "Score": 0.991
+      },
+      {
+        "Text": "University of Washington",
+        "Type": "ORGANIZATION",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Certified Solutions Architect",
+        "Type": "COMMERCIAL_ITEM",
+        "Score": 0.972
+      },
+      {
+        "Text": "Amazon Web Services",
+        "Type": "ORGANIZATION",
+        "Score": 0.996
+      },
+      {
+        "Text": "8+ Years",
+        "Type": "QUANTITY",
+        "Score": 0.954
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Score": 0.996
+      },
+      {
+        "Text": "event-driven architectures",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Lambda and Textract",
+        "Score": 0.984
+      },
+      {
+        "Text": "DynamoDB NoSQL design",
+        "Score": 0.977
+      },
+      {
+        "Text": "Infrastructure as Code",
+        "Score": 0.968
+      }
+    ]
+  },
+  {
+    "document_id": "sample_id_card_d1de3a",
+    "filename": "state_drivers_license_id.png",
+    "saved_filename": "state_drivers_license_id.png",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/state_drivers_license_id.png",
+    "category": "ID / Form",
+    "processed_at": "2026-10-10T19:55:55.855100Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 27,
+    "extracted_text": "STATE OF CALIFORNIA - DRIVER LICENSE\nDL: D62770F34\nEXP: 07/14/2030\nLN: VANCE\nFN: ALEXANDER MARCUS\nDOB: 07/14/1992\nCLASS: C\nSEX: M   HAIR: BRN   EYES: BLU\nISS: 07/15/2024",
+    "form_fields": {
+      "Document Type": "State Driver's License / Identification",
+      "Full Name": "Alexander Marcus Vance",
+      "Date of Birth": "1992-07-14",
+      "ID / License Number": "D62770F34",
+      "Expiration Date": "2030-07-14",
+      "Issue Date": "2024-07-15",
+      "Class": "Class C - Standard Operator",
+      "Issuing State": "California, USA",
+      "Organ Donor": "Yes [X]"
+    },
+    "entities": [
+      {
+        "Text": "Alexander Marcus Vance",
+        "Type": "PERSON",
+        "Score": 0.999
+      },
+      {
+        "Text": "California",
+        "Type": "LOCATION",
+        "Score": 0.994
+      },
+      {
+        "Text": "1992-07-14",
+        "Type": "DATE",
+        "Score": 0.995
+      },
+      {
+        "Text": "2030-07-14",
+        "Type": "DATE",
+        "Score": 0.992
+      },
+      {
+        "Text": "Class C",
+        "Type": "OTHER",
+        "Score": 0.961
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "State Driver's License",
+        "Score": 0.997
+      },
+      {
+        "Text": "Alexander Marcus Vance",
+        "Score": 0.995
+      },
+      {
+        "Text": "Standard Operator",
+        "Score": 0.974
+      }
+    ]
+  },
+  {
+    "document_id": "sample_id_card_261a5f",
+    "filename": "state_drivers_license_id.png",
+    "saved_filename": "state_drivers_license_id.png",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/state_drivers_license_id.png",
+    "category": "ID / Form",
+    "processed_at": "2026-10-10T19:55:55.587958Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 27,
+    "extracted_text": "STATE OF CALIFORNIA - DRIVER LICENSE\nDL: D1E2DBA79\nEXP: 07/14/2030\nLN: VANCE\nFN: ALEXANDER MARCUS\nDOB: 07/14/1992\nCLASS: C\nSEX: M   HAIR: BRN   EYES: BLU\nISS: 07/15/2024",
+    "form_fields": {
+      "Document Type": "State Driver's License / Identification",
+      "Full Name": "Alexander Marcus Vance",
+      "Date of Birth": "1992-07-14",
+      "ID / License Number": "D1E2DBA79",
+      "Expiration Date": "2030-07-14",
+      "Issue Date": "2024-07-15",
+      "Class": "Class C - Standard Operator",
+      "Issuing State": "California, USA",
+      "Organ Donor": "Yes [X]"
+    },
+    "entities": [
+      {
+        "Text": "Alexander Marcus Vance",
+        "Type": "PERSON",
+        "Score": 0.999
+      },
+      {
+        "Text": "California",
+        "Type": "LOCATION",
+        "Score": 0.994
+      },
+      {
+        "Text": "1992-07-14",
+        "Type": "DATE",
+        "Score": 0.995
+      },
+      {
+        "Text": "2030-07-14",
+        "Type": "DATE",
+        "Score": 0.992
+      },
+      {
+        "Text": "Class C",
+        "Type": "OTHER",
+        "Score": 0.961
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "State Driver's License",
+        "Score": 0.997
+      },
+      {
+        "Text": "Alexander Marcus Vance",
+        "Score": 0.995
+      },
+      {
+        "Text": "Standard Operator",
+        "Score": 0.974
+      }
+    ]
+  },
+  {
+    "document_id": "sample_resume_a2dc2f",
+    "filename": "sarah_jenkins_resume.txt",
+    "saved_filename": "sarah_jenkins_resume.txt",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/sarah_jenkins_resume.txt",
+    "category": "Resume",
+    "processed_at": "2026-10-10T19:55:55.170390Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 66,
+    "extracted_text": "SARAH JENKINS\nSenior Cloud Solutions Architect | Seattle, WA | sarah.jenkins@cloudtech.dev\nSUMMARY:\nResults-driven Cloud Architect with 8+ years designing highly available, serverless\nmicroservices and AI-enabled document processing pipelines on AWS.\nTECHNICAL SKILLS:\nAWS (Lambda, S3, DynamoDB, Textract, Comprehend, API Gateway, CDK, IAM), Python, Node.js\nEDUCATION:\nM.S. in Computer Science, University of Washington (2018)\nCERTIFICATIONS:\nAWS Certified Solutions Architect - Professional\nAWS Certified DevOps Engineer - Professional",
+    "form_fields": {
+      "Candidate Name": "Sarah Jenkins",
+      "Target Role": "Senior Cloud Solutions Architect",
+      "Email": "sarah.jenkins@cloudtech.dev",
+      "Phone": "+1 (555) 438-9201",
+      "Location": "Seattle, Washington, USA",
+      "Total Experience": "8+ Years",
+      "Highest Degree": "M.S. in Computer Science - University of Washington",
+      "Certifications": "AWS Certified Solutions Architect Professional, AWS DevOps Pro"
+    },
+    "entities": [
+      {
+        "Text": "Sarah Jenkins",
+        "Type": "PERSON",
+        "Score": 0.998
+      },
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Type": "TITLE",
+        "Score": 0.985
+      },
+      {
+        "Text": "Seattle, Washington",
+        "Type": "LOCATION",
+        "Score": 0.991
+      },
+      {
+        "Text": "University of Washington",
+        "Type": "ORGANIZATION",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Certified Solutions Architect",
+        "Type": "COMMERCIAL_ITEM",
+        "Score": 0.972
+      },
+      {
+        "Text": "Amazon Web Services",
+        "Type": "ORGANIZATION",
+        "Score": 0.996
+      },
+      {
+        "Text": "8+ Years",
+        "Type": "QUANTITY",
+        "Score": 0.954
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Score": 0.996
+      },
+      {
+        "Text": "event-driven architectures",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Lambda and Textract",
+        "Score": 0.984
+      },
+      {
+        "Text": "DynamoDB NoSQL design",
+        "Score": 0.977
+      },
+      {
+        "Text": "Infrastructure as Code",
+        "Score": 0.968
+      }
+    ]
+  },
+  {
+    "document_id": "sample_resume_076ed6",
+    "filename": "sarah_jenkins_resume.txt",
+    "saved_filename": "sarah_jenkins_resume.txt",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/sarah_jenkins_resume.txt",
+    "category": "Resume",
+    "processed_at": "2026-10-10T19:55:54.908575Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 66,
+    "extracted_text": "SARAH JENKINS\nSenior Cloud Solutions Architect | Seattle, WA | sarah.jenkins@cloudtech.dev\nSUMMARY:\nResults-driven Cloud Architect with 8+ years designing highly available, serverless\nmicroservices and AI-enabled document processing pipelines on AWS.\nTECHNICAL SKILLS:\nAWS (Lambda, S3, DynamoDB, Textract, Comprehend, API Gateway, CDK, IAM), Python, Node.js\nEDUCATION:\nM.S. in Computer Science, University of Washington (2018)\nCERTIFICATIONS:\nAWS Certified Solutions Architect - Professional\nAWS Certified DevOps Engineer - Professional",
+    "form_fields": {
+      "Candidate Name": "Sarah Jenkins",
+      "Target Role": "Senior Cloud Solutions Architect",
+      "Email": "sarah.jenkins@cloudtech.dev",
+      "Phone": "+1 (555) 438-9201",
+      "Location": "Seattle, Washington, USA",
+      "Total Experience": "8+ Years",
+      "Highest Degree": "M.S. in Computer Science - University of Washington",
+      "Certifications": "AWS Certified Solutions Architect Professional, AWS DevOps Pro"
+    },
+    "entities": [
+      {
+        "Text": "Sarah Jenkins",
+        "Type": "PERSON",
+        "Score": 0.998
+      },
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Type": "TITLE",
+        "Score": 0.985
+      },
+      {
+        "Text": "Seattle, Washington",
+        "Type": "LOCATION",
+        "Score": 0.991
+      },
+      {
+        "Text": "University of Washington",
+        "Type": "ORGANIZATION",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Certified Solutions Architect",
+        "Type": "COMMERCIAL_ITEM",
+        "Score": 0.972
+      },
+      {
+        "Text": "Amazon Web Services",
+        "Type": "ORGANIZATION",
+        "Score": 0.996
+      },
+      {
+        "Text": "8+ Years",
+        "Type": "QUANTITY",
+        "Score": 0.954
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Score": 0.996
+      },
+      {
+        "Text": "event-driven architectures",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Lambda and Textract",
+        "Score": 0.984
+      },
+      {
+        "Text": "DynamoDB NoSQL design",
+        "Score": 0.977
+      },
+      {
+        "Text": "Infrastructure as Code",
+        "Score": 0.968
+      }
+    ]
+  },
+  {
+    "document_id": "sample_invoice_9af64e",
+    "filename": "invoice_sample_2026.png",
+    "saved_filename": "invoice_sample_2026.png",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/invoice_sample_2026.png",
+    "category": "Invoice",
+    "processed_at": "2026-10-10T19:55:54.314736Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 56,
+    "extracted_text": "INVOICE\nCloudScale Solutions LLC\n100 Innovation Way, Suite 400, Austin, TX 78701\nBill To: Acme Global Technologies\nInvoice Number: INV-590202\nDate: October 03, 2026   Due Date: November 02, 2026\n----------------------------------------------------------------\nItem                   Qty     Rate        Amount\nAWS Cloud Migration     1     $3,000.00   $3,000.00\nServerless Lambda Setup 1     $1,250.00   $1,250.00\n----------------------------------------------------------------\nSubtotal: $4,250.00\nTax (8.25%): $350.62\nTotal Amount Due: $4,600.62",
+    "form_fields": {
+      "Invoice Number": "INV-590202",
+      "Invoice Date": "October 03, 2026",
+      "Due Date": "November 02, 2026",
+      "Vendor Name": "CloudScale Solutions LLC",
+      "Vendor Address": "100 Innovation Way, Suite 400, Austin, TX 78701",
+      "Bill To": "Acme Global Technologies",
+      "Subtotal": "$4,250.00",
+      "Tax (8.25%)": "$350.62",
+      "Total Amount Due": "$4,600.62",
+      "Payment Terms": "Net 30 Days",
+      "Purchase Order #": "PO-994821"
+    },
+    "entities": [
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Type": "ORGANIZATION",
+        "Score": 0.994
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Type": "ORGANIZATION",
+        "Score": 0.988
+      },
+      {
+        "Text": "Austin, TX 78701",
+        "Type": "LOCATION",
+        "Score": 0.965
+      },
+      {
+        "Text": "October 03, 2026",
+        "Type": "DATE",
+        "Score": 0.997
+      },
+      {
+        "Text": "November 02, 2026",
+        "Type": "DATE",
+        "Score": 0.991
+      },
+      {
+        "Text": "$4,600.62",
+        "Type": "QUANTITY",
+        "Score": 0.998
+      },
+      {
+        "Text": "$4,250.00",
+        "Type": "QUANTITY",
+        "Score": 0.992
+      },
+      {
+        "Text": "PO-994821",
+        "Type": "OTHER",
+        "Score": 0.942
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Total Amount Due",
+        "Score": 0.998
+      },
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Score": 0.995
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Score": 0.992
+      },
+      {
+        "Text": "Net 30 Days",
+        "Score": 0.978
+      },
+      {
+        "Text": "Innovation Way",
+        "Score": 0.965
+      }
+    ]
+  },
+  {
+    "document_id": "sample_invoice_d4faab",
+    "filename": "invoice_sample_2026.png",
+    "saved_filename": "invoice_sample_2026.png",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/invoice_sample_2026.png",
+    "category": "Invoice",
+    "processed_at": "2026-10-10T19:55:52.626413Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 56,
+    "extracted_text": "INVOICE\nCloudScale Solutions LLC\n100 Innovation Way, Suite 400, Austin, TX 78701\nBill To: Acme Global Technologies\nInvoice Number: INV-D41552\nDate: October 03, 2026   Due Date: November 02, 2026\n----------------------------------------------------------------\nItem                   Qty     Rate        Amount\nAWS Cloud Migration     1     $3,000.00   $3,000.00\nServerless Lambda Setup 1     $1,250.00   $1,250.00\n----------------------------------------------------------------\nSubtotal: $4,250.00\nTax (8.25%): $350.62\nTotal Amount Due: $4,600.62",
+    "form_fields": {
+      "Invoice Number": "INV-D41552",
+      "Invoice Date": "October 03, 2026",
+      "Due Date": "November 02, 2026",
+      "Vendor Name": "CloudScale Solutions LLC",
+      "Vendor Address": "100 Innovation Way, Suite 400, Austin, TX 78701",
+      "Bill To": "Acme Global Technologies",
+      "Subtotal": "$4,250.00",
+      "Tax (8.25%)": "$350.62",
+      "Total Amount Due": "$4,600.62",
+      "Payment Terms": "Net 30 Days",
+      "Purchase Order #": "PO-994821"
+    },
+    "entities": [
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Type": "ORGANIZATION",
+        "Score": 0.994
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Type": "ORGANIZATION",
+        "Score": 0.988
+      },
+      {
+        "Text": "Austin, TX 78701",
+        "Type": "LOCATION",
+        "Score": 0.965
+      },
+      {
+        "Text": "October 03, 2026",
+        "Type": "DATE",
+        "Score": 0.997
+      },
+      {
+        "Text": "November 02, 2026",
+        "Type": "DATE",
+        "Score": 0.991
+      },
+      {
+        "Text": "$4,600.62",
+        "Type": "QUANTITY",
+        "Score": 0.998
+      },
+      {
+        "Text": "$4,250.00",
+        "Type": "QUANTITY",
+        "Score": 0.992
+      },
+      {
+        "Text": "PO-994821",
+        "Type": "OTHER",
+        "Score": 0.942
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Total Amount Due",
+        "Score": 0.998
+      },
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Score": 0.995
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Score": 0.992
+      },
+      {
+        "Text": "Net 30 Days",
+        "Score": 0.978
+      },
+      {
+        "Text": "Innovation Way",
+        "Score": 0.965
+      }
+    ]
+  },
+  {
+    "document_id": "sample_invoice_b93f82",
+    "filename": "invoice_sample_2026.png",
+    "saved_filename": "invoice_sample_2026.png",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/invoice_sample_2026.png",
+    "category": "Invoice",
+    "processed_at": "2026-10-10T19:55:52.410805Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 56,
+    "extracted_text": "INVOICE\nCloudScale Solutions LLC\n100 Innovation Way, Suite 400, Austin, TX 78701\nBill To: Acme Global Technologies\nInvoice Number: INV-BC5FFA\nDate: October 03, 2026   Due Date: November 02, 2026\n----------------------------------------------------------------\nItem                   Qty     Rate        Amount\nAWS Cloud Migration     1     $3,000.00   $3,000.00\nServerless Lambda Setup 1     $1,250.00   $1,250.00\n----------------------------------------------------------------\nSubtotal: $4,250.00\nTax (8.25%): $350.62\nTotal Amount Due: $4,600.62",
+    "form_fields": {
+      "Invoice Number": "INV-BC5FFA",
+      "Invoice Date": "October 03, 2026",
+      "Due Date": "November 02, 2026",
+      "Vendor Name": "CloudScale Solutions LLC",
+      "Vendor Address": "100 Innovation Way, Suite 400, Austin, TX 78701",
+      "Bill To": "Acme Global Technologies",
+      "Subtotal": "$4,250.00",
+      "Tax (8.25%)": "$350.62",
+      "Total Amount Due": "$4,600.62",
+      "Payment Terms": "Net 30 Days",
+      "Purchase Order #": "PO-994821"
+    },
+    "entities": [
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Type": "ORGANIZATION",
+        "Score": 0.994
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Type": "ORGANIZATION",
+        "Score": 0.988
+      },
+      {
+        "Text": "Austin, TX 78701",
+        "Type": "LOCATION",
+        "Score": 0.965
+      },
+      {
+        "Text": "October 03, 2026",
+        "Type": "DATE",
+        "Score": 0.997
+      },
+      {
+        "Text": "November 02, 2026",
+        "Type": "DATE",
+        "Score": 0.991
+      },
+      {
+        "Text": "$4,600.62",
+        "Type": "QUANTITY",
+        "Score": 0.998
+      },
+      {
+        "Text": "$4,250.00",
+        "Type": "QUANTITY",
+        "Score": 0.992
+      },
+      {
+        "Text": "PO-994821",
+        "Type": "OTHER",
+        "Score": 0.942
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Total Amount Due",
+        "Score": 0.998
+      },
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Score": 0.995
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Score": 0.992
+      },
+      {
+        "Text": "Net 30 Days",
+        "Score": 0.978
+      },
+      {
+        "Text": "Innovation Way",
+        "Score": 0.965
+      }
+    ]
+  },
+  {
+    "document_id": "sample_invoice_120546",
+    "filename": "invoice_sample_2026.png",
+    "saved_filename": "invoice_sample_2026.png",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/invoice_sample_2026.png",
+    "category": "Invoice",
+    "processed_at": "2026-10-03T23:46:12.563318Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 56,
+    "extracted_text": "INVOICE\nCloudScale Solutions LLC\n100 Innovation Way, Suite 400, Austin, TX 78701\nBill To: Acme Global Technologies\nInvoice Number: INV-19CABE\nDate: October 03, 2026   Due Date: November 02, 2026\n----------------------------------------------------------------\nItem                   Qty     Rate        Amount\nAWS Cloud Migration     1     $3,000.00   $3,000.00\nServerless Lambda Setup 1     $1,250.00   $1,250.00\n----------------------------------------------------------------\nSubtotal: $4,250.00\nTax (8.25%): $350.62\nTotal Amount Due: $4,600.62",
+    "form_fields": {
+      "Invoice Number": "INV-19CABE",
+      "Invoice Date": "October 03, 2026",
+      "Due Date": "November 02, 2026",
+      "Vendor Name": "CloudScale Solutions LLC",
+      "Vendor Address": "100 Innovation Way, Suite 400, Austin, TX 78701",
+      "Bill To": "Acme Global Technologies",
+      "Subtotal": "$4,250.00",
+      "Tax (8.25%)": "$350.62",
+      "Total Amount Due": "$4,600.62",
+      "Payment Terms": "Net 30 Days",
+      "Purchase Order #": "PO-994821"
+    },
+    "entities": [
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Type": "ORGANIZATION",
+        "Score": 0.994
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Type": "ORGANIZATION",
+        "Score": 0.988
+      },
+      {
+        "Text": "Austin, TX 78701",
+        "Type": "LOCATION",
+        "Score": 0.965
+      },
+      {
+        "Text": "October 03, 2026",
+        "Type": "DATE",
+        "Score": 0.997
+      },
+      {
+        "Text": "November 02, 2026",
+        "Type": "DATE",
+        "Score": 0.991
+      },
+      {
+        "Text": "$4,600.62",
+        "Type": "QUANTITY",
+        "Score": 0.998
+      },
+      {
+        "Text": "$4,250.00",
+        "Type": "QUANTITY",
+        "Score": 0.992
+      },
+      {
+        "Text": "PO-994821",
+        "Type": "OTHER",
+        "Score": 0.942
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Total Amount Due",
+        "Score": 0.998
+      },
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Score": 0.995
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Score": 0.992
+      },
+      {
+        "Text": "Net 30 Days",
+        "Score": 0.978
+      },
+      {
+        "Text": "Innovation Way",
+        "Score": 0.965
+      }
+    ]
+  },
+  {
+    "document_id": "sample_resume_e7544a",
+    "filename": "sarah_jenkins_resume.txt",
+    "saved_filename": "sarah_jenkins_resume.txt",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/sarah_jenkins_resume.txt",
+    "category": "Resume",
+    "processed_at": "2026-10-03T23:41:57.751073Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 66,
+    "extracted_text": "SARAH JENKINS\nSenior Cloud Solutions Architect | Seattle, WA | sarah.jenkins@cloudtech.dev\nSUMMARY:\nResults-driven Cloud Architect with 8+ years designing highly available, serverless\nmicroservices and AI-enabled document processing pipelines on AWS.\nTECHNICAL SKILLS:\nAWS (Lambda, S3, DynamoDB, Textract, Comprehend, API Gateway, CDK, IAM), Python, Node.js\nEDUCATION:\nM.S. in Computer Science, University of Washington (2018)\nCERTIFICATIONS:\nAWS Certified Solutions Architect - Professional\nAWS Certified DevOps Engineer - Professional",
+    "form_fields": {
+      "Candidate Name": "Sarah Jenkins",
+      "Target Role": "Senior Cloud Solutions Architect",
+      "Email": "sarah.jenkins@cloudtech.dev",
+      "Phone": "+1 (555) 438-9201",
+      "Location": "Seattle, Washington, USA",
+      "Total Experience": "8+ Years",
+      "Highest Degree": "M.S. in Computer Science - University of Washington",
+      "Certifications": "AWS Certified Solutions Architect Professional, AWS DevOps Pro"
+    },
+    "entities": [
+      {
+        "Text": "Sarah Jenkins",
+        "Type": "PERSON",
+        "Score": 0.998
+      },
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Type": "TITLE",
+        "Score": 0.985
+      },
+      {
+        "Text": "Seattle, Washington",
+        "Type": "LOCATION",
+        "Score": 0.991
+      },
+      {
+        "Text": "University of Washington",
+        "Type": "ORGANIZATION",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Certified Solutions Architect",
+        "Type": "COMMERCIAL_ITEM",
+        "Score": 0.972
+      },
+      {
+        "Text": "Amazon Web Services",
+        "Type": "ORGANIZATION",
+        "Score": 0.996
+      },
+      {
+        "Text": "8+ Years",
+        "Type": "QUANTITY",
+        "Score": 0.954
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Score": 0.996
+      },
+      {
+        "Text": "event-driven architectures",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Lambda and Textract",
+        "Score": 0.984
+      },
+      {
+        "Text": "DynamoDB NoSQL design",
+        "Score": 0.977
+      },
+      {
+        "Text": "Infrastructure as Code",
+        "Score": 0.968
+      }
+    ]
+  },
+  {
+    "document_id": "sample_resume_03bae0",
+    "filename": "sarah_jenkins_resume.txt",
+    "saved_filename": "sarah_jenkins_resume.txt",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/sarah_jenkins_resume.txt",
+    "category": "Resume",
+    "processed_at": "2026-10-03T23:41:57.512086Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 66,
+    "extracted_text": "SARAH JENKINS\nSenior Cloud Solutions Architect | Seattle, WA | sarah.jenkins@cloudtech.dev\nSUMMARY:\nResults-driven Cloud Architect with 8+ years designing highly available, serverless\nmicroservices and AI-enabled document processing pipelines on AWS.\nTECHNICAL SKILLS:\nAWS (Lambda, S3, DynamoDB, Textract, Comprehend, API Gateway, CDK, IAM), Python, Node.js\nEDUCATION:\nM.S. in Computer Science, University of Washington (2018)\nCERTIFICATIONS:\nAWS Certified Solutions Architect - Professional\nAWS Certified DevOps Engineer - Professional",
+    "form_fields": {
+      "Candidate Name": "Sarah Jenkins",
+      "Target Role": "Senior Cloud Solutions Architect",
+      "Email": "sarah.jenkins@cloudtech.dev",
+      "Phone": "+1 (555) 438-9201",
+      "Location": "Seattle, Washington, USA",
+      "Total Experience": "8+ Years",
+      "Highest Degree": "M.S. in Computer Science - University of Washington",
+      "Certifications": "AWS Certified Solutions Architect Professional, AWS DevOps Pro"
+    },
+    "entities": [
+      {
+        "Text": "Sarah Jenkins",
+        "Type": "PERSON",
+        "Score": 0.998
+      },
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Type": "TITLE",
+        "Score": 0.985
+      },
+      {
+        "Text": "Seattle, Washington",
+        "Type": "LOCATION",
+        "Score": 0.991
+      },
+      {
+        "Text": "University of Washington",
+        "Type": "ORGANIZATION",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Certified Solutions Architect",
+        "Type": "COMMERCIAL_ITEM",
+        "Score": 0.972
+      },
+      {
+        "Text": "Amazon Web Services",
+        "Type": "ORGANIZATION",
+        "Score": 0.996
+      },
+      {
+        "Text": "8+ Years",
+        "Type": "QUANTITY",
+        "Score": 0.954
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Score": 0.996
+      },
+      {
+        "Text": "event-driven architectures",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Lambda and Textract",
+        "Score": 0.984
+      },
+      {
+        "Text": "DynamoDB NoSQL design",
+        "Score": 0.977
+      },
+      {
+        "Text": "Infrastructure as Code",
+        "Score": 0.968
+      }
+    ]
+  },
+  {
+    "document_id": "doc_f8864fbe",
+    "filename": "Niraj_Akhade_Resume__1.pdf",
+    "saved_filename": "doc_f8864fbe_Niraj_Akhade_Resume__1.pdf",
+    "s3_bucket": "doc-processor-sandbox",
+    "s3_key": "uploads/doc_f8864fbe_Niraj_Akhade_Resume__1.pdf",
+    "category": "Resume",
+    "processed_at": "2026-10-03T23:40:44.413620Z",
+    "processing_time_ms": 122,
+    "status": "COMPLETED",
+    "mode": "SANDBOX_SIMULATOR",
+    "word_count": 66,
+    "extracted_text": "SARAH JENKINS\nSenior Cloud Solutions Architect | Seattle, WA | sarah.jenkins@cloudtech.dev\nSUMMARY:\nResults-driven Cloud Architect with 8+ years designing highly available, serverless\nmicroservices and AI-enabled document processing pipelines on AWS.\nTECHNICAL SKILLS:\nAWS (Lambda, S3, DynamoDB, Textract, Comprehend, API Gateway, CDK, IAM), Python, Node.js\nEDUCATION:\nM.S. in Computer Science, University of Washington (2018)\nCERTIFICATIONS:\nAWS Certified Solutions Architect - Professional\nAWS Certified DevOps Engineer - Professional",
+    "form_fields": {
+      "Candidate Name": "Sarah Jenkins",
+      "Target Role": "Senior Cloud Solutions Architect",
+      "Email": "sarah.jenkins@cloudtech.dev",
+      "Phone": "+1 (555) 438-9201",
+      "Location": "Seattle, Washington, USA",
+      "Total Experience": "8+ Years",
+      "Highest Degree": "M.S. in Computer Science - University of Washington",
+      "Certifications": "AWS Certified Solutions Architect Professional, AWS DevOps Pro"
+    },
+    "entities": [
+      {
+        "Text": "Sarah Jenkins",
+        "Type": "PERSON",
+        "Score": 0.998
+      },
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Type": "TITLE",
+        "Score": 0.985
+      },
+      {
+        "Text": "Seattle, Washington",
+        "Type": "LOCATION",
+        "Score": 0.991
+      },
+      {
+        "Text": "University of Washington",
+        "Type": "ORGANIZATION",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Certified Solutions Architect",
+        "Type": "COMMERCIAL_ITEM",
+        "Score": 0.972
+      },
+      {
+        "Text": "Amazon Web Services",
+        "Type": "ORGANIZATION",
+        "Score": 0.996
+      },
+      {
+        "Text": "8+ Years",
+        "Type": "QUANTITY",
+        "Score": 0.954
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Score": 0.996
+      },
+      {
+        "Text": "event-driven architectures",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Lambda and Textract",
+        "Score": 0.984
+      },
+      {
+        "Text": "DynamoDB NoSQL design",
+        "Score": 0.977
+      },
+      {
+        "Text": "Infrastructure as Code",
+        "Score": 0.968
+      }
+    ]
+  },
+  {
+    "document_id": "sample_resume_0a4b36",
+    "filename": "sarah_jenkins_resume.txt",
+    "saved_filename": "sarah_jenkins_resume.txt",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/sarah_jenkins_resume.txt",
+    "category": "Resume",
+    "processed_at": "2026-10-03T23:33:09.765536Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 66,
+    "extracted_text": "SARAH JENKINS\nSenior Cloud Solutions Architect | Seattle, WA | sarah.jenkins@cloudtech.dev\nSUMMARY:\nResults-driven Cloud Architect with 8+ years designing highly available, serverless\nmicroservices and AI-enabled document processing pipelines on AWS.\nTECHNICAL SKILLS:\nAWS (Lambda, S3, DynamoDB, Textract, Comprehend, API Gateway, CDK, IAM), Python, Node.js\nEDUCATION:\nM.S. in Computer Science, University of Washington (2018)\nCERTIFICATIONS:\nAWS Certified Solutions Architect - Professional\nAWS Certified DevOps Engineer - Professional",
+    "form_fields": {
+      "Candidate Name": "Sarah Jenkins",
+      "Target Role": "Senior Cloud Solutions Architect",
+      "Email": "sarah.jenkins@cloudtech.dev",
+      "Phone": "+1 (555) 438-9201",
+      "Location": "Seattle, Washington, USA",
+      "Total Experience": "8+ Years",
+      "Highest Degree": "M.S. in Computer Science - University of Washington",
+      "Certifications": "AWS Certified Solutions Architect Professional, AWS DevOps Pro"
+    },
+    "entities": [
+      {
+        "Text": "Sarah Jenkins",
+        "Type": "PERSON",
+        "Score": 0.998
+      },
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Type": "TITLE",
+        "Score": 0.985
+      },
+      {
+        "Text": "Seattle, Washington",
+        "Type": "LOCATION",
+        "Score": 0.991
+      },
+      {
+        "Text": "University of Washington",
+        "Type": "ORGANIZATION",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Certified Solutions Architect",
+        "Type": "COMMERCIAL_ITEM",
+        "Score": 0.972
+      },
+      {
+        "Text": "Amazon Web Services",
+        "Type": "ORGANIZATION",
+        "Score": 0.996
+      },
+      {
+        "Text": "8+ Years",
+        "Type": "QUANTITY",
+        "Score": 0.954
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Senior Cloud Solutions Architect",
+        "Score": 0.996
+      },
+      {
+        "Text": "event-driven architectures",
+        "Score": 0.989
+      },
+      {
+        "Text": "AWS Lambda and Textract",
+        "Score": 0.984
+      },
+      {
+        "Text": "DynamoDB NoSQL design",
+        "Score": 0.977
+      },
+      {
+        "Text": "Infrastructure as Code",
+        "Score": 0.968
+      }
+    ]
+  },
+  {
+    "document_id": "sample_invoice_92bf7e",
+    "filename": "invoice_sample_2026.png",
+    "saved_filename": "invoice_sample_2026.png",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/invoice_sample_2026.png",
+    "category": "Invoice",
+    "processed_at": "2026-10-03T23:32:50.513274Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 56,
+    "extracted_text": "INVOICE\nCloudScale Solutions LLC\n100 Innovation Way, Suite 400, Austin, TX 78701\nBill To: Acme Global Technologies\nInvoice Number: INV-324B8C\nDate: October 03, 2026   Due Date: November 02, 2026\n----------------------------------------------------------------\nItem                   Qty     Rate        Amount\nAWS Cloud Migration     1     $3,000.00   $3,000.00\nServerless Lambda Setup 1     $1,250.00   $1,250.00\n----------------------------------------------------------------\nSubtotal: $4,250.00\nTax (8.25%): $350.62\nTotal Amount Due: $4,600.62",
+    "form_fields": {
+      "Invoice Number": "INV-324B8C",
+      "Invoice Date": "October 03, 2026",
+      "Due Date": "November 02, 2026",
+      "Vendor Name": "CloudScale Solutions LLC",
+      "Vendor Address": "100 Innovation Way, Suite 400, Austin, TX 78701",
+      "Bill To": "Acme Global Technologies",
+      "Subtotal": "$4,250.00",
+      "Tax (8.25%)": "$350.62",
+      "Total Amount Due": "$4,600.62",
+      "Payment Terms": "Net 30 Days",
+      "Purchase Order #": "PO-994821"
+    },
+    "entities": [
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Type": "ORGANIZATION",
+        "Score": 0.994
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Type": "ORGANIZATION",
+        "Score": 0.988
+      },
+      {
+        "Text": "Austin, TX 78701",
+        "Type": "LOCATION",
+        "Score": 0.965
+      },
+      {
+        "Text": "October 03, 2026",
+        "Type": "DATE",
+        "Score": 0.997
+      },
+      {
+        "Text": "November 02, 2026",
+        "Type": "DATE",
+        "Score": 0.991
+      },
+      {
+        "Text": "$4,600.62",
+        "Type": "QUANTITY",
+        "Score": 0.998
+      },
+      {
+        "Text": "$4,250.00",
+        "Type": "QUANTITY",
+        "Score": 0.992
+      },
+      {
+        "Text": "PO-994821",
+        "Type": "OTHER",
+        "Score": 0.942
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Total Amount Due",
+        "Score": 0.998
+      },
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Score": 0.995
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Score": 0.992
+      },
+      {
+        "Text": "Net 30 Days",
+        "Score": 0.978
+      },
+      {
+        "Text": "Innovation Way",
+        "Score": 0.965
+      }
+    ]
+  },
+  {
+    "document_id": "sample_invoice_17d537",
+    "filename": "invoice_sample_2026.png",
+    "saved_filename": "invoice_sample_2026.png",
+    "s3_bucket": "intelligent-doc-processor-uploads",
+    "s3_key": "uploads/invoice_sample_2026.png",
+    "category": "Invoice",
+    "processed_at": "2026-10-03T23:32:00.485774Z",
+    "processing_time_ms": 340,
+    "status": "COMPLETED",
+    "mode": "DEMO_SAMPLE",
+    "word_count": 56,
+    "extracted_text": "INVOICE\nCloudScale Solutions LLC\n100 Innovation Way, Suite 400, Austin, TX 78701\nBill To: Acme Global Technologies\nInvoice Number: INV-3A185C\nDate: October 03, 2026   Due Date: November 02, 2026\n----------------------------------------------------------------\nItem                   Qty     Rate        Amount\nAWS Cloud Migration     1     $3,000.00   $3,000.00\nServerless Lambda Setup 1     $1,250.00   $1,250.00\n----------------------------------------------------------------\nSubtotal: $4,250.00\nTax (8.25%): $350.62\nTotal Amount Due: $4,600.62",
+    "form_fields": {
+      "Invoice Number": "INV-3A185C",
+      "Invoice Date": "October 03, 2026",
+      "Due Date": "November 02, 2026",
+      "Vendor Name": "CloudScale Solutions LLC",
+      "Vendor Address": "100 Innovation Way, Suite 400, Austin, TX 78701",
+      "Bill To": "Acme Global Technologies",
+      "Subtotal": "$4,250.00",
+      "Tax (8.25%)": "$350.62",
+      "Total Amount Due": "$4,600.62",
+      "Payment Terms": "Net 30 Days",
+      "Purchase Order #": "PO-994821"
+    },
+    "entities": [
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Type": "ORGANIZATION",
+        "Score": 0.994
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Type": "ORGANIZATION",
+        "Score": 0.988
+      },
+      {
+        "Text": "Austin, TX 78701",
+        "Type": "LOCATION",
+        "Score": 0.965
+      },
+      {
+        "Text": "October 03, 2026",
+        "Type": "DATE",
+        "Score": 0.997
+      },
+      {
+        "Text": "November 02, 2026",
+        "Type": "DATE",
+        "Score": 0.991
+      },
+      {
+        "Text": "$4,600.62",
+        "Type": "QUANTITY",
+        "Score": 0.998
+      },
+      {
+        "Text": "$4,250.00",
+        "Type": "QUANTITY",
+        "Score": 0.992
+      },
+      {
+        "Text": "PO-994821",
+        "Type": "OTHER",
+        "Score": 0.942
+      }
+    ],
+    "key_phrases": [
+      {
+        "Text": "Total Amount Due",
+        "Score": 0.998
+      },
+      {
+        "Text": "CloudScale Solutions LLC",
+        "Score": 0.995
+      },
+      {
+        "Text": "Acme Global Technologies",
+        "Score": 0.992
+      },
+      {
+        "Text": "Net 30 Days",
+        "Score": 0.978
+      },
+      {
+        "Text": "Innovation Way",
+        "Score": 0.965
+      }
+    ]
+  }
+]

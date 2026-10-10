@@ -1,0 +1,11 @@
+{
+  "include": [
+    "server",
+    "lambda"
+  ],
+  "extraPaths": [
+    "C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages"
+  ],
+  "reportMissingImports": false,
+  "reportMissingTypeStubs": false
+}

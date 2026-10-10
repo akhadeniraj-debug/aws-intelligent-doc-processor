@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Document Intelligence Studio | Serverless IDP</title>
+  <meta name="description" content="Production-ready serverless document processing pipeline using AWS S3, Lambda, Textract, Comprehend, and DynamoDB.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Top Enterprise Navigation Header -->
+    <header class="header">
+      <div class="brand">
+        <div class="brand-logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10 9 9 9 8 9"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>
+            Document Intelligence Studio
+            <span class="version-tag">Serverless IDP</span>
+          </h1>
+          <p class="subtitle">Amazon S3 ➔ Lambda Handler ➔ AWS Textract ➔ AWS Comprehend ➔ Amazon DynamoDB</p>
+        </div>
+      </div>
+
+      <div class="header-status">
+        <div class="pipeline-tags">
+          <span class="service-tag s3"><span class="dot"></span>S3</span>
+          <span class="service-arrow">→</span>
+          <span class="service-tag lambda"><span class="dot"></span>Lambda</span>
+          <span class="service-arrow">→</span>
+          <span class="service-tag textract"><span class="dot"></span>Textract</span>
+          <span class="service-arrow">+</span>
+          <span class="service-tag comprehend"><span class="dot"></span>Comprehend</span>
+          <span class="service-arrow">→</span>
+          <span class="service-tag dynamodb"><span class="dot"></span>DynamoDB</span>
+        </div>
+        <div id="systemStatusBadge" class="mode-badge sandbox">
+          <span class="mode-indicator"></span>
+          <span id="statusModeText">Checking AWS...</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- KPI Metrics Summary Bar -->
+    <section class="stats-strip">
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">Processed Documents</span>
+          <svg class="stat-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div class="stat-value" id="statTotalDocs">0</div>
+        <div class="stat-sub">
+          <span class="stat-badge">Live NoSQL</span>
+          <span>Indexed in DynamoDB</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">Avg. Pipeline Latency</span>
+          <svg class="stat-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+        </div>
+        <div class="stat-value" id="statAvgLatency">0 ms</div>
+        <div class="stat-sub">
+          <span class="stat-badge">Serverless</span>
+          <span>End-to-end ingestion</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">Extracted Entities (NER)</span>
+          <svg class="stat-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        </div>
+        <div class="stat-value" id="statTotalEntities">0</div>
+        <div class="stat-sub">
+          <span class="stat-badge">Comprehend</span>
+          <span>Categorized entities</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-label">OCR Confidence</span>
+          <svg class="stat-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="stat-value highlight">99.2%</div>
+        <div class="stat-sub">
+          <span class="stat-badge">Textract</span>
+          <span>Average line accuracy</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Workspace Layout -->
+    <main class="main-content">
+      <!-- Left Column: Ingestion & Serverless Execution Log -->
+      <section class="left-panel">
+        <div class="panel-card upload-section">
+          <div class="section-title">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            <h2>Document Ingestion</h2>
+          </div>
+          <p class="section-desc">Upload documents to trigger automated S3 event notifications and serverless extraction.</p>
+
+          <div class="dropzone" id="dropZone">
+            <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg,.txt" style="display:none;">
+            <div class="dropzone-icon">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+            </div>
+            <div class="dropzone-text">
+              <strong>Click to upload</strong> or drag and drop
+            </div>
+            <div class="dropzone-hint">PDF, PNG, JPG, or TXT (Max 15MB)</div>
+          </div>
+
+          <div class="samples-container">
+            <div class="samples-title">Pre-loaded Enterprise Templates</div>
+            <div class="samples-grid">
+              <button class="sample-btn" data-sample="invoice">
+                <span class="sample-icon">📄</span>
+                <span class="sample-info">
+                  <strong>Commercial Consulting Invoice</strong>
+                  <small>Vendor, line items, tax, total due</small>
+                </span>
+              </button>
+              <button class="sample-btn" data-sample="resume">
+                <span class="sample-icon">👤</span>
+                <span class="sample-info">
+                  <strong>Solutions Architect Resume</strong>
+                  <small>Candidate, skills, experience, education</small>
+                </span>
+              </button>
+              <button class="sample-btn" data-sample="id_card">
+                <span class="sample-icon">🪪</span>
+                <span class="sample-info">
+                  <strong>State Identification / Driver License</strong>
+                  <small>Legal name, DOB, license #, expiration</small>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pipeline Orchestration Audit Stepper -->
+        <div class="panel-card pipeline-card">
+          <div class="section-title">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <h2>Pipeline Execution Trace</h2>
+          </div>
+          <div class="stepper-list" id="pipelineStepper">
+            <div class="stepper-step" id="step-s3">
+              <div class="step-marker">1</div>
+              <div class="step-content">
+                <strong>S3 Bucket Ingestion</strong>
+                <p>Stores binary document in encrypted S3 bucket</p>
+              </div>
+              <div class="step-status">Standby</div>
+            </div>
+            <div class="stepper-step" id="step-lambda">
+              <div class="step-marker">2</div>
+              <div class="step-content">
+                <strong>Lambda Event Trigger</strong>
+                <p>s3:ObjectCreated dispatches event to Python 3.12</p>
+              </div>
+              <div class="step-status">Standby</div>
+            </div>
+            <div class="stepper-step" id="step-textract">
+              <div class="step-marker">3</div>
+              <div class="step-content">
+                <strong>AWS Textract (OCR & Forms)</strong>
+                <p>Extracts raw text, table structures & key-value pairs</p>
+              </div>
+              <div class="step-status">Standby</div>
+            </div>
+            <div class="stepper-step" id="step-comprehend">
+              <div class="step-marker">4</div>
+              <div class="step-content">
+                <strong>AWS Comprehend (NLP/NER)</strong>
+                <p>Identifies named entities, types & key phrases</p>
+              </div>
+              <div class="step-status">Standby</div>
+            </div>
+            <div class="stepper-step" id="step-dynamo">
+              <div class="step-marker">5</div>
+              <div class="step-content">
+                <strong>DynamoDB Catalog</strong>
+                <p>Indexed in ProcessedDocuments NoSQL catalog</p>
+              </div>
+              <div class="step-status">Standby</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Column: Document Intelligence Inspection Workbench -->
+      <section class="right-panel">
+        <div class="panel-card result-card">
+          <div class="result-header">
+            <div class="result-meta">
+              <span class="category-badge" id="resCategory">No Document Loaded</span>
+              <h3 id="resFilename">Select or upload a document</h3>
+              <div class="meta-row">
+                <span id="resDocId">ID: --</span>
+                <span class="meta-dot">•</span>
+                <span id="resLatency">Latency: -- ms</span>
+                <span class="meta-dot">•</span>
+                <span id="resWords">Word Count: 0</span>
+              </div>
+            </div>
+            <div class="result-actions">
+              <button id="copyJsonBtn" class="btn secondary-btn" title="Copy full DynamoDB JSON">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy JSON
+              </button>
+            </div>
+          </div>
+
+          <!-- Analysis Tab Navigation -->
+          <div class="tabs-bar">
+            <button class="tab-btn active" data-tab="tab-kv">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"/></svg>
+              Key-Value Fields
+            </button>
+            <button class="tab-btn" data-tab="tab-entities">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+              Entities (NER)
+            </button>
+            <button class="tab-btn" data-tab="tab-phrases">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              Key Phrases
+            </button>
+            <button class="tab-btn" data-tab="tab-ocr">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
+              OCR Plaintext
+            </button>
+            <button class="tab-btn" data-tab="tab-json">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              DynamoDB Payload
+            </button>
+          </div>
+
+          <!-- Tab 1: Key-Value Form Fields -->
+          <div class="tab-pane active" id="tab-kv">
+            <div class="table-container">
+              <table class="kv-table">
+                <thead>
+                  <tr>
+                    <th style="width: 35%;">Extracted Field (Key)</th>
+                    <th style="width: 45%;">Extracted Value</th>
+                    <th style="width: 20%;">Engine</th>
+                  </tr>
+                </thead>
+                <tbody id="kvTableBody">
+                  <tr>
+                    <td colspan="3" class="empty-state">Upload an invoice, resume, or ID form to view extracted key-value pairs.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Tab 2: Entities & NER -->
+          <div class="tab-pane" id="tab-entities">
+            <div class="entities-legend">
+              <span class="legend-chip PERSON">PERSON</span>
+              <span class="legend-chip ORGANIZATION">ORGANIZATION</span>
+              <span class="legend-chip DATE">DATE</span>
+              <span class="legend-chip QUANTITY">QUANTITY / CURRENCY</span>
+              <span class="legend-chip LOCATION">LOCATION</span>
+              <span class="legend-chip OTHER">OTHER</span>
+            </div>
+            <div class="entities-grid" id="entitiesGrid">
+              <div class="empty-state">No entities to display yet.</div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Key Phrases -->
+          <div class="tab-pane" id="tab-phrases">
+            <div class="phrases-cloud" id="phrasesCloud">
+              <div class="empty-state">AWS Comprehend key phrases will appear here.</div>
+            </div>
+          </div>
+
+          <!-- Tab 4: Raw OCR Text -->
+          <div class="tab-pane" id="tab-ocr">
+            <pre class="code-preview" id="rawOcrText">Raw OCR text extracted from Textract will appear here.</pre>
+          </div>
+
+          <!-- Tab 5: DynamoDB Record JSON -->
+          <div class="tab-pane" id="tab-json">
+            <pre class="code-preview json" id="rawJsonRecord">{ "message": "No document selected." }</pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Document History Catalog -->
+    <section class="history-section">
+      <div class="history-header">
+        <div class="section-title">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+          <h2>Processed Documents Catalog (Amazon DynamoDB)</h2>
+        </div>
+        <div class="history-controls">
+          <input type="text" id="searchDocsInput" placeholder="Filter by filename, ID, or category..." class="search-input">
+          <button id="clearHistoryBtn" class="btn text-btn">Clear History</button>
+        </div>
+      </div>
+
+      <div class="table-container history-table-container">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th style="width: 15%;">Document ID</th>
+              <th style="width: 25%;">Filename</th>
+              <th style="width: 14%;">Category</th>
+              <th style="width: 12%;">Entities Found</th>
+              <th style="width: 12%;">Latency</th>
+              <th style="width: 10%;">Status</th>
+              <th style="width: 12%;">Processed At</th>
+              <th style="width: 8%; text-align: center;">Action</th>
+            </tr>
+          </thead>
+          <tbody id="historyTableBody">
+            <tr>
+              <td colspan="8" class="empty-state">Loading document history...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

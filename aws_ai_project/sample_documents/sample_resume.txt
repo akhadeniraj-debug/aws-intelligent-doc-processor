@@ -1,0 +1,31 @@
+SARAH JENKINS
+Senior Cloud & AI Solutions Architect
+Seattle, WA | (555) 438-9201 | sarah.jenkins@cloudtech.dev | linkedin.com/in/sarahjenkins-cloud
+
+EXECUTIVE SUMMARY:
+High-impact Solutions Architect with 8+ years architecting enterprise-grade, serverless data pipelines,
+distributed microservices, and AI-enabled document processing workflows on Amazon Web Services (AWS).
+
+CORE COMPETENCIES:
+• Cloud & Serverless: AWS Lambda, S3, DynamoDB, API Gateway, SQS, SNS, EventBridge, Step Functions
+• Applied AI / ML: AWS Textract, AWS Comprehend, Amazon Bedrock, SageMaker
+• DevOps & IaC: AWS CDK, SAM, Terraform, Docker, GitHub Actions, CloudFormation
+• Languages: Python (boto3, FastAPI), TypeScript, Node.js, SQL
+
+PROFESSIONAL EXPERIENCE:
+Principal Cloud Architect | Apex Data Systems, Seattle, WA | 2021 – Present
+• Designed an event-driven Intelligent Document Processing (IDP) platform processing 250,000 invoices/month.
+• Reduced document ingestion latency by 72% using AWS Lambda, Textract, and Comprehend NER.
+• Cut operational infrastructure costs by 45% by migrating legacy EC2 OCR engines to AWS serverless services.
+
+Cloud Engineer | Horizon Tech, Austin, TX | 2018 – 2021
+• Built RESTful APIs with FastAPI and DynamoDB handling 50M requests/day with sub-15ms p99 latency.
+
+EDUCATION:
+M.S. in Computer Science | University of Washington, 2018
+B.S. in Software Engineering | University of Texas at Austin, 2016
+
+CERTIFICATIONS:
+• AWS Certified Solutions Architect – Professional (SAP-C02)
+• AWS Certified DevOps Engineer – Professional
+• AWS Certified Machine Learning – Specialty

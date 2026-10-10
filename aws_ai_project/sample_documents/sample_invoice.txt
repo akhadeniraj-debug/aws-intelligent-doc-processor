@@ -1,0 +1,36 @@
+================================================================================
+                                   INVOICE
+================================================================================
+VENDOR:
+CloudScale Solutions LLC
+100 Innovation Way, Suite 400
+Austin, TX 78701
+Tax ID: 82-4910294
+
+BILL TO:
+Acme Global Technologies
+450 Enterprise Parkway
+San Francisco, CA 94105
+
+INVOICE DETAILS:
+Invoice Number:    INV-2026-8891
+Invoice Date:      October 03, 2026
+Payment Due:       November 02, 2026
+Payment Terms:     Net 30 Days
+Purchase Order #:  PO-994821
+
+--------------------------------------------------------------------------------
+LINE ITEMS:
+Description                           Qty     Unit Price      Total
+--------------------------------------------------------------------------------
+1. AWS Serverless Pipeline Setup        1     $3,000.00       $3,000.00
+   (S3 + Lambda + Textract + DynamoDB)
+2. Comprehend NLP Integration           1     $1,250.00       $1,250.00
+   (Named Entity Recognition + Models)
+--------------------------------------------------------------------------------
+                                              SUBTOTAL:       $4,250.00
+                                              TAX (8.25%):    $  350.62
+                                              TOTAL DUE:      $4,600.62
+================================================================================
+REMIT PAYMENT TO: Chase Bank NA | Routing: 111000025 | Acct: 994821034
+Thank you for your business!
